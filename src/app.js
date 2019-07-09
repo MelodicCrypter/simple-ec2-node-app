@@ -18,10 +18,10 @@ app.set('view engine', 'html');
 // Middlewares
 // Snippets from my other repo: https://github.com/MelodicCrypter/Robust-Node-Scaffolding
 // app.use(cors({ origin: false })); // Cross-Origin Resource Sharing is disabled => disabled due to Nginx proxy
-// app.use(helmet()); // Helmet, for security of HTTP requests
-// app.use(express.json({ limit: '300kb' })); // Parser for JSON, with limit to avoid payload
-// app.use(express.urlencoded()); // Parser for x-www-form-urlencoded
-// app.use(hpp()); // protection against Parameter Pollution attacks
+app.use(helmet()); // Helmet, for security of HTTP requests
+app.use(express.json({ limit: '300kb' })); // Parser for JSON, with limit to avoid payload
+app.use(express.urlencoded()); // Parser for x-www-form-urlencoded
+app.use(hpp()); // protection against Parameter Pollution attacks
 app.use(express.static(publicPath)); // Static Assets
 
 app.get('/', (req, res) => {
