@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: rgb(63,240,249);
+    background: linear-gradient(343deg, rgba(32, 116, 156, 0.9177871832326681) 0%, rgba(94, 70, 103, 0.9542017490589986) 100%);
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.8em;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 28%;
+    color: white;
+    letter-spacing: 6px;
+    text-shadow: -3px 3px 0px #00000047;
+}
